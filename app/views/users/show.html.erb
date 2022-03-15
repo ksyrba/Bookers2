@@ -29,7 +29,7 @@
             <% end %>
           </div>
           <h2 class="mt-3">New book</h2>
-          <%= form_with model: @book_, url: '/books', method: :post do |f| %>
+          <%= form_with model: @book, url: '/books', method: :post do |f| %>
           <div class="form-group">
             <p class="book_title">Title</p>
             <%= f.text_field :title %>
