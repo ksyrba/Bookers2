@@ -41,11 +41,11 @@
           <%= form_with model: @book, url: '/books', method: :post do |f| %>
           <div class="form-group">
             <p class="book_title">Title</p>
-            <%= f.text_field :title %>
+            <%= f.text_field :title, class: "form-control" %>
           </div>
           <div class="form-group">
             <p class="book_opinion">Opinion</p>
-            <%= f.text_area :body %>
+            <%= f.text_area :body, class: "form-control" %>
           </div>
           <div class="form-group">
             <div class="btn btn-success">
